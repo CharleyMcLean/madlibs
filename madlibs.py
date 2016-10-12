@@ -51,15 +51,21 @@ def show_madlib_form():
 @app.route('/madlib')
 def show_madlib():
     """ """
-    firstname = request.args.get("firstname")
-    noun = request.args.get("noun")
-    adjective = request.args.get("adjective")
+    personone = request.args.get("personone")
+    genderone = request.args.get("genderone")
+    persontwo = request.args.get("persontwo")
+    gendertwo = request.args.get("gendertwo")
+    animaloneplural = request.args.getlist("animaloneplural")
+    animaltwoplural = request.args.get("animaltwoplural")
     color = request.args.get("color")
 
     return render_template("madlib.html",
-                            firstname=firstname,
-                            noun=noun,
-                            adjective=adjective,
+                            personone=personone,
+                            genderone=genderone,
+                            persontwo=persontwo,
+                            gendertwo=gendertwo,
+                            animaloneplural=animaloneplural,
+                            animaltwoplural=animaltwoplural,
                             color=color)
 
         

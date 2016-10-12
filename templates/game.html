@@ -6,18 +6,41 @@
 <body>
     <form action="/madlib">
 
-    First Name <input type="text" name="firstname"><br>
+    Enter a person's name <input type="text" name="personone"><br>
+
+    What is their gender?
+    <select name="genderone">
+        <option value="him">him</option>
+        <option value="her">her</option>
+        <option value="them">them</option>
+    </select><br>
+
+    Enter another person's name <input type="text" name="persontwo"><br>
+    
+    What is their gender?
+    <select name="gendertwo">
+        <option value="he">he</option>
+        <option value="she">she</option>
+        <option value="they">they</option>
+    </select><br>
+
+    Pick two animals:
+    <input type="checkbox" name="animaloneplural" value="hummingbirds">hummingbirds
+    <input type="checkbox" name="animaloneplural" value="lyrebirds">lyrebirds
+    <input type="checkbox" name="animaloneplural" value="flamingos">flamingos<br>
+
+       
+
+    Enter another animal (plural) <input type="text" name="animaltwoplural"><br>
 
     Pick a color
     <select name="color">
-        <option value="red">Red</option>
-        <option value="blue">Blue</option>
-        <option value="green">Green</option>
+        <option value="grey">grey</option>
+        <option value="black">black</option>
+        <option value="brown">brown</option>
+        <option value="rainbow">rainbow</option>
     </select><br>
 
-    Enter a noun: <input type="text" name="noun"><br>
-
-    Enter an adjective: <input type="text" name="adjective"><br>
     <input type="submit">
     </form>
 </body>

@@ -6,7 +6,21 @@
 <body>
 
 <h1>Your Madlib!</h1>
-    <p>There once was a {{ color }} {{ noun }} sitting in the Hackbright Lab. When {{ firstname }} went to pick it up, it burst into flames in a totally {{ adjective }} way.</p>
+    <p>{{ personone }} was walking in the park one day, humming to {{ genderone }}self. The day was bright, the sun was shining, and the 
+        {% for animal in animaloneplural %}
+            
+            {% if animaloneplural[loop.index0] == (animaloneplural|length - 1) %}
+                and 
+                {% endif %}
+
+                {{ animal }}
+
+        {% endfor %} 
+    were singing.</p>
+    <p>Suddenly, two {{ color }} {{ animaltwoplural }} ran by.</p>
+    <p>"Run! Run!" they cried. "{{ persontwo }} is coming! And {{ gendertwo }}'s really angry!"</p>
+
+
 
 </body>
 </html>
